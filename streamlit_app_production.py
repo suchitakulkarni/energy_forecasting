@@ -320,7 +320,10 @@ def plot_forecast_with_uncertainty(results, title="Price Forecast"):
             y=1.02,
             xanchor="right",
             x=1,
-            bgcolor='rgba(45, 45, 45, 0.8)'
+            bgcolor='rgba(45, 45, 45, 0.9)',
+            font=dict(color='#ffffff', size=12),
+            bordercolor='rgba(255,255,255,0.1)',
+            borderwidth=1
         )
     )
     
@@ -406,7 +409,10 @@ def plot_physics_context(df, results):
             y=1.02,
             xanchor="right",
             x=1,
-            bgcolor='rgba(45,45,45,0.8)'
+            bgcolor='rgba(45,45,45,0.9)',
+            font=dict(color='#ffffff', size=12),
+            bordercolor='rgba(255,255,255,0.1)',
+            borderwidth=1
         )
     )
     return fig
@@ -743,7 +749,13 @@ def main():
                     paper_bgcolor='#1e1e1e',
                     plot_bgcolor='#2d2d2d',
                     font=dict(color='#ffffff'),
-                    height=400
+                    height=400,
+                    legend=dict(
+                        bgcolor='rgba(45,45,45,0.9)',
+                        font=dict(color='#ffffff', size=12),
+                        bordercolor='rgba(255,255,255,0.1)',
+                        borderwidth=1
+                    )
                 )
                 
                 st.plotly_chart(fig_regime, use_container_width=True)
@@ -813,7 +825,13 @@ def main():
                     paper_bgcolor='#1e1e1e',
                     plot_bgcolor='#2d2d2d',
                     font=dict(color='#ffffff'),
-                    height=400
+                    height=400,
+                    legend=dict(
+                        bgcolor='rgba(45,45,45,0.9)',
+                        font=dict(color='#ffffff', size=12),
+                        bordercolor='rgba(255,255,255,0.1)',
+                        borderwidth=1
+                    )
                 )
                 
                 st.plotly_chart(fig_err, use_container_width=True)
@@ -869,7 +887,13 @@ def main():
                     plot_bgcolor='#2d2d2d',
                     font=dict(color='#ffffff'),
                     hovermode='x unified',
-                    height=500
+                    height=500,
+                    legend=dict(
+                        bgcolor='rgba(45,45,45,0.9)',
+                        font=dict(color='#ffffff', size=12),
+                        bordercolor='rgba(255,255,255,0.1)',
+                        borderwidth=1
+                    )
                 )
                 
                 st.plotly_chart(fig_gen, use_container_width=True)
@@ -889,7 +913,13 @@ def main():
                     template='plotly_dark',
                     paper_bgcolor='#1e1e1e',
                     font=dict(color='#ffffff'),
-                    height=400
+                    height=400,
+                    legend=dict(
+                        bgcolor='rgba(45,45,45,0.9)',
+                        font=dict(color='#ffffff', size=12),
+                        bordercolor='rgba(255,255,255,0.1)',
+                        borderwidth=1
+                    )
                 )
                 
                 st.plotly_chart(fig_pie, use_container_width=True)
@@ -1001,7 +1031,13 @@ def main():
                         paper_bgcolor='#1e1e1e',
                         plot_bgcolor='#2d2d2d',
                         font=dict(color='#ffffff'),
-                        height=400
+                        height=400,
+                        legend=dict(
+                            bgcolor='rgba(45,45,45,0.9)',
+                            font=dict(color='#ffffff', size=12),
+                            bordercolor='rgba(255,255,255,0.1)',
+                            borderwidth=1
+                        )
                     )
                     
                     st.plotly_chart(fig_drift, use_container_width=True)
